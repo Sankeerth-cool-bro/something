@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Chadwick Boseman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .show-button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .show-button:hover {
+            background-color: #45a049;
+        }
+        #chadwickImage {
+            display: none;
+            margin-top: 20px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        #message {
+            display: none;
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="show-button" id="showButton">Click here</button>
+        <div id="imageContainer">
+            <img id="chadwickImage" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHlcjlMySWf_SbYxIliEToQfOIyjx3YzhPa0A8XZ1pytfPIj4lhTaI5T_pZBdd4OWfEdGwqVk8CVq7bgjzPIlM83xBRQ2eFvuTGSEuEaEH">
+        </div>
+        <div id="message">He is Black</div>
+    </div>
+
+    <script>
+        // Get the button, image, and message elements
+        const showButton = document.getElementById('showButton');
+        const chadwickImage = document.getElementById('chadwickImage');
+        const message = document.getElementById('message');
+
+        // Add click event to the button
+        showButton.addEventListener('click', function() {
+            chadwickImage.style.display = 'block';  // Show the image
+            message.style.display = 'block';  // Show the message "He is Black"
+        });
+    </script>
+</body>
+</html>
